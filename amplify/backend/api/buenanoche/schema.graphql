@@ -1,0 +1,15 @@
+enum Category {
+  MAIN
+  SIDE
+  DESSERT
+  DRINK
+  OTHER
+}
+
+type Food @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  person: String
+  category: Category
+}
+ 

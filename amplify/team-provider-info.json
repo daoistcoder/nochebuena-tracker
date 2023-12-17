@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-buenanoche-staging-160829-authRole",
+      "UnauthRoleArn": "arn:aws:iam::129636848691:role/amplify-buenanoche-staging-160829-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::129636848691:role/amplify-buenanoche-staging-160829-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-buenanoche-staging-160829-deployment",
+      "UnauthRoleName": "amplify-buenanoche-staging-160829-unauthRole",
+      "StackName": "amplify-buenanoche-staging-160829",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:129636848691:stack/amplify-buenanoche-staging-160829/84f37660-9cf6-11ee-afda-0a8d863aa19e",
+      "AmplifyAppId": "d3t4negxi0sn2s"
+    }
+  }
+}
