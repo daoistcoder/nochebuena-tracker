@@ -10,6 +10,17 @@
       "StackName": "amplify-buenanoche-staging-160829",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:129636848691:stack/amplify-buenanoche-staging-160829/84f37660-9cf6-11ee-afda-0a8d863aa19e",
       "AmplifyAppId": "d3t4negxi0sn2s"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3t4negxi0sn2s",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "buenanoche": {}
+      }
     }
   }
 }
