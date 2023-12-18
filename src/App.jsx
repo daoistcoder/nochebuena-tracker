@@ -10,8 +10,8 @@ function App() {
   const [food, setFood] = useState([]);
 
   useEffect(() => {
-    const getData = () => {
-      DataStore.observeQuery(Food).subscribe(({ items }) => {
+    const getData = async () => {
+      await DataStore.observeQuery(Food).subscribe(({ items }) => {
         setFood(items)
       })
     }
@@ -43,7 +43,7 @@ function App() {
                 <ul>
                   {food.map(item => {
                     if (item.category === category) {
-                      return <li key={item.id}>{item.title} - {item.person}</li>
+                      return <li key={item.id}>{item.title} ni {item.person}</li>
                     }
                   })}
                 </ul>
@@ -81,10 +81,11 @@ const styles = {
   },
   // css for category columns
   category: {
+    width: '100%',
     display: 'grid',
     gridTemplateColumns: '1fr 1fr 1fr',
-    gap: '2vw',
-    padding: '1rem',
+    gap: '1rem',
+    padding: '0 1rem',
   },
   head1: {
     textAlign: 'center',
