@@ -72,19 +72,19 @@ const styles = {
     height: '100vh',
   },
   formContainer: {
-    height: '45vh',
+    height: 'max-content',
     border: '1px solid #ccc', // Add a border
     boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)', // Add a box-shadow
     borderRadius: '5px',
   },
 
   formContainer2: { // css for sub container with 
-    width: '44vw',
+    width: '55%',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'start',
     gap: '1vh',
-    height: '30vh',
+    height: 'max-content',
   },
   // css for category columns
   categories: {
@@ -105,7 +105,7 @@ const styles = {
   },
   alerts: {
     fontSize: '1.5rem',
-    width: '750px',
+    width: '55%',
     marginBottom: '1vh',
   },
 };
