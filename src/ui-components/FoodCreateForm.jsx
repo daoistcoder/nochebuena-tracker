@@ -44,8 +44,8 @@ export default function FoodCreateForm(props) {
     setErrors({});
   };
   const validations = {
-    title: [],
-    person: [],
+    title: [{ type: "Required" }],
+    person: [{ type: "Required" }],
     category: [],
   };
   const runValidationTasks = async (
@@ -124,12 +124,12 @@ export default function FoodCreateForm(props) {
     >
       <Heading
         level={2}
-        children="What are you bringing in Noche Buena?"
+        children="Anong dadalhin mo sa Noche Buena?"
         {...getOverrideProps(overrides, "SectionalElement0")}
       ></Heading>
       <TextField
-        label="Food"
-        isRequired={false}
+        label="Pagkain"
+        isRequired={true}
         isReadOnly={false}
         placeholder="e.g. Lechon"
         value={title}
@@ -155,8 +155,8 @@ export default function FoodCreateForm(props) {
         {...getOverrideProps(overrides, "title")}
       ></TextField>
       <TextField
-        label="Your name"
-        isRequired={false}
+        label="Pangalan mo"
+        isRequired={true}
         isReadOnly={false}
         placeholder="e.g. Juan dela Cruz"
         value={person}
@@ -182,8 +182,8 @@ export default function FoodCreateForm(props) {
         {...getOverrideProps(overrides, "person")}
       ></TextField>
       <SelectField
-        label="Category"
-        placeholder="Please select an option"
+        label="Anong klaseng handa"
+        placeholder="Pumili sa pagpipilian"
         isDisabled={false}
         value={category}
         onChange={(e) => {
